@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+
+    <!------ Fonte "Roboto" ------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!------ Fonte "Source Code Pro" ------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
+
+    <!------ Código CSS ------>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="container.css">
+
+    <link rel="shortcut icon" href="./img/orelha.png" type="image/x-icon">
+
+    <title>Event Listener</title>
+</head>
+<body>
+    <main>
+        <header class="header"></header>
+
+        <section class="container">
+            <!---------- Questão 1 ---------->
+            <article class="question1">
+                <h2>O que são eventos de mouse e teclado em JavaScript?</h2>
+                <ul>
+                    <li>Interação do usuário</li>
+                    <li>Eventos</li>
+                    <li>Ações feitas pelo usuário</li>
+                    <li>Próxima ação</li>
+                    <li>Elementos sejam alterados</li>
+                    <br>
+                    <li>Ex.: passar o mouse sobre um botão, um bloco de texto, 
+                        uma única palavra, um ícone ou uma imagem.
+                    </li>
+                </ul>
+                <div class="example1">
+                    <div>
+                        <button>MUDAR COR!!!</button>
+                        <img src="./img/sad-cat.jpg" alt="sad-cat">
+                    </div>
+                </div>
+
+                <div class="event-types">
+                    <h3>Tipos de eventos de mouse e teclado:</h3>
+                    <ul>
+                        <li><strong>onclick:</strong> o elemento é clicado pelo usuário</li>
+                        <li><strong>onkeypress:</strong> o usuário pressiona uma tecla sobre o elemento</li>
+                        <li><strong>onmouseover:</strong> define ação quando o usuário passa o mouse sobre o elemento</li>
+                        <li><strong>onmouseout:</strong> define ação quando o usuário retira o mouse sobre o elemento</li>
+                    </ul>
+
+                    <br>
+                    <h3>Há outros tipos de eventos que envolvem mouse e teclado:</h3>
+                    <ul>
+                        <li><strong>onblur:</strong> remove o foco do elemento</li>
+                        <li><strong>onfocus:</strong> o elemento é focado</li>
+                        <li><strong>onchange:</strong> muda o valor do elemento</li>
+                        <li><strong>onload:</strong> carrega o elemento por completo</li>
+                        <li><strong>onsubmit:</strong> define ação ao enviar um formulário</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Somente mouse: onclick, onmousedown, onmouseup</h3>
+
+                    <div class="mouse-events cursor" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)">
+                        CLICA NEU!!!
+                    </div>
+
+                    <br><br>
+                    <h3>Somente teclado: onkeyup, onkeydown, onkeypress</h3>
+                    <div class="keyboard-events">
+                        <input type="text">
+                        <br><br>
+                        <div>
+                            O que foi digitado:
+                        </div>
+                        <br>
+                        <div class="keys"></div>
+                    </div>
+                </div>
+            </article>
+
+            <!---------- Questão 2 ---------->
+            <article class="question2">
+                <h2>O que é um Event Listener e como adicioná-lo via JS?</h2>
+                <ul>
+                    <li>Chuva de eventos</li>
+                    <li>Carregamento de página</li>
+                    <li>Escutar o evento</li>
+                    <li>Ação</li>
+                </ul>
+                <br>
+
+                <h3>O que isso significa?</h3>
+
+                <div class="example2">
+                    <ul>
+                        <li>Adicionar um escutador</li>
+                        <li>Funções</li>
+                        <li>Evento acontecer</li>
+                    </ul>
+                    
+                    <img src="./img/escutar.png">
+                </div>
+
+                <h3>Como fazemos isso?</h3>
+
+                <div class="example2">
+                    <ul>
+                        <li>Usando o método 'addEventListener()'</li>
+                        <li>Botão</li>
+                        <li>Atuará como escutador</li>
+                        <li>Podemos remover usando 'removeEventListener()'</li>
+                    </ul>
+                    
+                    <img src="./img/botao.gif">
+                </div>
+
+                <h3>Sintaxe</h3>
+                <div class="syntax">
+                    <img src="./img/sintaxe-event-listener.png">
+                </div>
+                <p>Para ver mais sobre os tipos de evento: <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">para os curiosos</a>
+                </p>
+                <br>
+                <h3>Exemplo:</h3>
+                <p class="message hide">Clicaram em algo aí hein</p>
+                <br>
+                <div class="button">
+                    Clica aqui!!!
+                </div>
+            </article>
+
+            <!---------- Questão 3 ---------->
+            <article class="question3">
+                <h2>O que é uma função de callback (utilizada no Event Listener)?</h2>
+                <p>
+                    É uma função que só entra em operação após o
+                    processamento de outra. Ou seja, ela fica
+                    aguardando outra função ser executada para
+                    daí sim começar a rodar.
+                </p>
+                <h3>Exemplo:</h3>
+                <div class="example3">
+                    <div class="code">
+                        <p>
+                            const button = document.querySelector(“button”);<br><br>
+                            button.addEventListener(“click”, () => {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                console.log(“UHHUUUU eu sou um botão!!!”);<br>
+                            });
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!---------- Questão 4 ---------->
+            <article class="question4">
+                <div class="title">
+                    <h2>Qual a diferença de um Event Listener de atributos HTML (como onclick)?</h2>
+                </div>
+
+                <div class="topics">
+                    <h3>Event Listener</h3>
+                    <ul>
+                        <li>Vários manipuladores</li>
+                        <li>Remoção com 'removeEventListener()'</li>
+                        <li>Legibilidade e manutenibilidade</li>
+                    </ul>
+                    <h3>Atributos HTML</h3>
+                    <ul>
+                        <li>Difícil manutenção no longo prazo</li>
+                        <li>Oposto à SoC (Separation of Concerns)</li>
+                        <li>Permite um único manipulador por evento e elemento</li>
+                        <li>Para remover basta deixar como <strong>null</strong> ou <strong>false</strong></li>
+                    </ul>
+                </div>
+                
+                <img src="./img/diference.png">
+            </article>
+
+
+            <!---------- Questão 5 ---------->
+
+
+
+
+
+            <!-- <div class="navigation">
+                <button onclick="nextStep()">Próximo</button>
+            </div> -->
+        </section>
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

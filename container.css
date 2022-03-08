@@ -1,0 +1,237 @@
+.container{
+    /* background-color: blue; */
+    background-color: #fff;
+    width: 80%;
+    /* height: 100vh; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 20px 0px;
+
+    box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+article{
+    /* background-color: #42a5f5; */
+    margin-bottom: 50px;
+    width: 95%;
+}
+
+.hidden{
+    display: none;
+}
+
+h2{
+    height: 50px;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+}
+
+ul{
+    /* background-color: orange; */
+    list-style-type: disc;
+    padding-left: 30px;
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.018em;
+}
+
+/* .navigation{
+    background-color: aquamarine;
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    padding-right: 20px;
+}
+
+.navigation button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #d3d3d3;
+} */
+
+/* ######################## QUESTÃO 1 ######################## */
+
+.question1{
+    /* background-color: aquamarine; */
+    background-color: #fff;
+}
+
+.example1{
+    /* background-color: limegreen; */
+    
+    display: flex;
+    justify-content: center;
+
+    padding-top: 30px;
+}
+
+.example1 div{
+    /* background-color: darkorchid; */
+    width: 800px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.example1 button{
+    width: 300px;
+    height: 60px;
+
+    border-radius: 10px;
+    border: none;
+    background-color: #42a5f5;
+
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+}
+
+.example1 img, .example2 img{
+    border-radius: 10px;
+    width: 236px;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.25);
+}
+
+h3{
+    /* background-color: yellowgreen; */
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 23px;
+    /* text-align: center; */
+    letter-spacing: 0.018em;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.mouse-events{
+    width: 200px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 5px;
+    background-color:#D94A38;
+}
+
+.keyboard-events input{
+    background-color: #cccccc;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.keyboard-events .keys{
+    background-color: #cccccc;
+    width: 500px;
+    height: 70px;
+}
+
+/* ######################## QUESTÃO 2 ######################## */
+
+.example2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.syntax{
+    display: flex;
+    justify-content: center;
+}
+
+.syntax img{
+    width: 800px;
+}
+
+.button{
+    background-color: red;
+    width: 110px;
+    /* height: 50px; */
+    padding: 10px;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.shown{
+    visibility: visible;
+}
+
+/* ######################## QUESTÃO 3 ######################## */
+
+.example3{
+    /* background-color: orange; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.example3 .code{
+    width: 500px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    background-color: #cccccc;
+}
+
+.example3 > p{
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* ######################## QUESTÃO 4 ######################## */
+
+.question4{
+    /* background-color: #D94A38; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question4 .title{
+    /* background-color: yellow; */
+}
+
+.question4 .topics{
+    /* background-color: aqua; */
+}
+
+.question4 img{
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.25);
+}
