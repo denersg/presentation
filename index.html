@@ -28,7 +28,8 @@
 </head>
 <body>
     <main>
-        <header class="header"></header>
+        <!---------- Espaçamento superior ---------->
+        <header></header>
 
         <section class="container">
             <!---------- Questão 1 ---------->
@@ -52,7 +53,7 @@
                     </div>
                 </div>
 
-                <div class="event-types">
+                <div class="event-types" data-anime="left">
                     <h3>Tipos de eventos de mouse e teclado:</h3>
                     <ul>
                         <li><strong>onclick:</strong> o elemento é clicado pelo usuário</li>
@@ -72,7 +73,7 @@
                     </ul>
                 </div>
 
-                <div>
+                <div data-anime="right">
                     <h3>Somente mouse: onclick, onmousedown, onmouseup</h3>
 
                     <div class="mouse-events cursor" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)">
@@ -95,8 +96,8 @@
 
             <!---------- Questão 2 ---------->
             <article class="question2">
-                <h2>O que é um Event Listener e como adicioná-lo via JS?</h2>
-                <ul>
+                <h2 data-anime="left">O que é um Event Listener e como adicioná-lo via JS?</h2>
+                <ul data-anime="left">
                     <li>Chuva de eventos</li>
                     <li>Carregamento de página</li>
                     <li>Escutar o evento</li>
@@ -104,57 +105,57 @@
                 </ul>
                 <br>
 
-                <h3>O que isso significa?</h3>
+                <h3 data-anime="left">O que isso significa?</h3>
 
                 <div class="example2">
-                    <ul>
+                    <ul data-anime="left">
                         <li>Adicionar um escutador</li>
                         <li>Funções</li>
                         <li>Evento acontecer</li>
                     </ul>
                     
-                    <img src="./img/escutar.png">
+                    <img data-anime="right" src="./img/escutar.png">
                 </div>
 
-                <h3>Como fazemos isso?</h3>
+                <h3 data-anime="left">Como fazemos isso?</h3>
 
                 <div class="example2">
-                    <ul>
+                    <ul data-anime="left">
                         <li>Usando o método 'addEventListener()'</li>
                         <li>Botão</li>
                         <li>Atuará como escutador</li>
                         <li>Podemos remover usando 'removeEventListener()'</li>
                     </ul>
                     
-                    <img src="./img/botao.gif">
+                    <img data-anime="right" src="./img/botao.gif">
                 </div>
 
-                <h3>Sintaxe</h3>
-                <div class="syntax">
+                <h3 data-anime="left">Sintaxe</h3>
+                <div class="syntax" data-anime="left">
                     <img src="./img/sintaxe-event-listener.png">
                 </div>
                 <p>Para ver mais sobre os tipos de evento: <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">para os curiosos</a>
                 </p>
                 <br>
-                <h3>Exemplo:</h3>
+                <h3 data-anime="left">Exemplo:</h3>
                 <p class="message hide">Clicaram em algo aí hein</p>
                 <br>
-                <div class="button">
+                <div class="button" data-anime="left">
                     Clica aqui!!!
                 </div>
             </article>
 
             <!---------- Questão 3 ---------->
             <article class="question3">
-                <h2>O que é uma função de callback (utilizada no Event Listener)?</h2>
-                <p>
+                <h2 data-anime="left">O que é uma função de callback (utilizada no Event Listener)?</h2>
+                <p data-anime="left">
                     É uma função que só entra em operação após o
                     processamento de outra. Ou seja, ela fica
                     aguardando outra função ser executada para
                     daí sim começar a rodar.
                 </p>
-                <h3>Exemplo:</h3>
-                <div class="example3">
+                <h3 data-anime="left">Exemplo:</h3>
+                <div class="example3" data-anime="right">
                     <div class="code">
                         <p>
                             const button = document.querySelector(“button”);<br>
@@ -169,11 +170,11 @@
 
             <!---------- Questão 4 ---------->
             <article class="question4">
-                <div class="title">
+                <div class="title" data-anime="left">
                     <h2>Qual a diferença de um Event Listener de atributos HTML (como onclick)?</h2>
                 </div>
 
-                <div class="topics">
+                <div class="topics" data-anime="left">
                     <h3>Event Listener</h3>
                     <ul>
                         <li>Vários manipuladores</li>
@@ -189,17 +190,16 @@
                     </ul>
                 </div>
                 
-                <img src="./img/diference.png">
+                <img data-anime="right" src="./img/diference.png">
             </article>
-
 
             <!---------- Questão 5 ---------->
             <article class="question5">
-                <div class="title">
+                <div class="title" data-anime="left">
                     <h2>O que é o objeto Event que é recebido na função de callback?</h2>
                 </div>
 
-                <div class="topics">
+                <div class="topics" data-anime="left">
                     <ul>
                         <li>Recebe uma notificação</li>
                         <li>Ocorrência de eventos</li>
@@ -212,17 +212,16 @@
                     </ul>
                 </div>
                 
-                <img src="./img/object-event.png">
+                <img data-anime="right" src="./img/object-event.png">
             </article>
-
 
             <!---------- Questão 6 ---------->
             <article class="question6">
-                <div class="title">
+                <div class="title" data-anime="left">
                     <h2>O que é Event Bubbling em JS?</h2>
                 </div>
 
-                <div class="topics">
+                <div class="topics" data-anime="left">
                     <ul>
                         <li>Interações acionam eventos</li>
                         <li>Clique em um elemento</li>
@@ -235,15 +234,37 @@
                     </ul>
                 </div>
                 
-                <img src="./img/object-event.png">
+                <img data-anime="right" src="./img/bubbling.png">
+
+                <div class="dom-tree" data-anime="left">
+                    <img src="./img/dom-tree.png">
+                </div>
             </article>
 
+            <!---------- Questão 7 ---------->
+            <article class="question7">
+                <div class="title" data-anime="left">
+                    <h2>O que faz a função 'event.stopPropagation'?</h2>
+                </div>
 
-
-            <!-- <div class="navigation">
-                <button onclick="nextStep()">Próximo</button>
-            </div> -->
+                <div class="topics" data-anime="left">
+                    <ul>
+                        <li>Cessa a propagação</li>
+                        <li>
+                            Pode ser colocada no elemento 
+                            onde ocorre o evento
+                        </li>
+                        <li>Os ancestrais não sofrem o efeito</li>
+                    </ul>
+                </div>
+                
+                <img data-anime="right" src="./img/stop-propagation.png">
+            </article>
+            
         </section>
+
+        <!---------- Espaçamento inferior ---------->
+        <footer></footer>
     </main>
 
     <script type="text/javascript" src="script.js"></script>
