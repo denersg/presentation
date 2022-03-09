@@ -57,5 +57,9 @@ buttonQuestion2.addEventListener("click", () => {
     message.classList.toggle("shown");
 });
 
-// ######################## QUESTÃO 3 ########################
+// ######################## QUESTÃO 5 ########################
 
+//Imprime no console assim que uma tecla é apertada
+addEventListener("keydown", function(event) {
+    console.log(event);
+});
